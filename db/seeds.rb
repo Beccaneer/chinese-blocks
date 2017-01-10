@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Simple sentence
+# Want to eventually break up "woman" and "person" 
+Word.create(hanzi: '我', pinyin: 'wo3', meaning: 'I', type: 'pronoun')
+Word.create(hanzi: '是', pinyin: 'shi4', meaning: 'be', type: 'verb')
+Word.create(hanzi: '女人', pinyin: 'nv3ren2', meaning: 'woman', type: 'noun')
