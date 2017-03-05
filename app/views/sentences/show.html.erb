@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+<%= @structure %>
+
+<% @structure.each do |word| %>
+	<% if word.kind_of?(Array) %>
+		<%= select_tag "words", options_from_collection_for_select(Word.where(classifier: word), :id, :hanzi) %>
+	<% else %>
+		<%= word %>
+	<% end %>
+<% end %>		 
+
+

@@ -22,6 +22,8 @@
         <td><%= link_to 'Destroy', word, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+
+    <%= select_tag "words", options_from_collection_for_select(@words, 'id', 'hanzi') %>
   </tbody>
 </table>
 

@@ -1,2 +1,4 @@
 <h1>Welcome to the app!</h1>
 <p>Things will come soon...</p>
+
+<%= select_tag "sentences", options_from_collection_for_select(@sentences, 'id', 'structure') %>
